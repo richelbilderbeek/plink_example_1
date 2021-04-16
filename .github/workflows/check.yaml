@@ -1,0 +1,18 @@
+on:
+  push:
+  pull_request:
+
+name: check
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Download PLINK zip
+        run: wget http://zzz.bwh.harvard.edu/plink/dist/plink-latest.zip
+
+      - name: Unzip PLINK zip
+        run: unzip plink-latest.zip
+
