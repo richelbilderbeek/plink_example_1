@@ -10,12 +10,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Download PLINK zip
-        run: wget http://zzz.bwh.harvard.edu/plink/dist/plink-latest.zip
+      - name: Download PLINK exe
+        run: wget http://zzz.bwh.harvard.edu/plink/dist/plink-1.07-x86_64.zip
 
       - name: Unzip PLINK zip
-        run: unzip plink-latest.zip
+        run: unzip plink-1.07-x86_64.zip
 
-      - name: Build
-        run: g++ -o plink *.cpp
+      - name: Show PLINK's help
+        run: ./plink-1.07-x86_64/plink --help
+
+      - name: Symlink to PLINK
+        run: ln -s ./plink-1.07-x86_64/plink
+
+      - name: Show PLINK's help
+        run: ./plink --help
 

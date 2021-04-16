@@ -41,3 +41,5 @@ vignettes/*.pdf
 *.cpp
 *.h
 Makefile
+plink-1.07-x86_64
+*.log
