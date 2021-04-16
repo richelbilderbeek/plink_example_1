@@ -16,3 +16,6 @@ jobs:
       - name: Unzip PLINK zip
         run: unzip plink-latest.zip
 
+      - name: Build
+        run: g++ -o plink *.cpp
+
