@@ -45,3 +45,5 @@ plink-1.07-x86_64
 *.log
 plink_1_7
 plink-ng/
+plink_1_9_linux_x86_64_20210416/
+plink_1_9
