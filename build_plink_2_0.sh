@@ -5,17 +5,17 @@
 ###############################################################################
 
 # Download PLINK exe
-wget https://s3.amazonaws.com/plink1-assets/plink_linux_x86_64_20210416.zip
+wget https://s3.amazonaws.com/plink2-assets/plink2_linux_x86_64_20210420.zip
 
 # Unzip PLINK zip
-unzip plink_linux_x86_64_20210416.zip -d plink_1_9_linux_x86_64_20210416
+unzip plink2_linux_x86_64_20210420.zip -d plink2_linux_x86_64_20210420
 
 # Show PLINK's help
-./plink_1_9_linux_x86_64_20210416/plink --help
+./plink2_linux_x86_64_20210420/plink2 --help
 
 # Symlink to PLINK
-ln -s ./plink_1_9_linux_x86_64_20210416/plink plink_1_9
+ln -s ./plink2_linux_x86_64_20210420/plink2 plink_2_0
 
 # Show PLINK's help
-./plink_1_9 --help
+./plink_2_0 --help
 
