@@ -6,6 +6,6 @@
 
 git clone https://github.com/chrchang/plink-ng
 cd plink-ng/1.9
-#plink_first_compile
+./plink_first_compile
 make
 cd ../..
