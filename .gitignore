@@ -44,3 +44,4 @@ Makefile
 plink-1.07-x86_64
 *.log
 plink_1_7
+plink-ng/
