@@ -14,5 +14,5 @@ unzip plink-1.07-x86_64.zip
 ln -s ./plink-1.07-x86_64/plink plink_1_7
 
 # Show PLINK's help
-./plink_1_7 --help || true
+./plink_1_7 --help
 
